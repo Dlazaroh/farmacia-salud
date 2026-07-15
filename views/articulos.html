@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia Salud - Artículos</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Farmacia Salud</h1>
+        <nav>
+            <ul>
+                <a href="../index.html">Inicio</a>
+                <a class="enlace-vista" href="./medicamentos.html" data-categoria="medicamento">Medicamentos</a>
+                <a class="enlace-vista" href="./articulos.html" data-categoria="articulo">Artículos</a>
+            </ul>
+        </nav>
+        <div class="acciones">
+            <select id="temaSelect" onchange="cambiarTema()">
+                <option value="light">☀️ Modo Claro</option>
+                <option value="dark">🌙 Modo Oscuro</option>
+                <option value="sepia">🎨 Modo Sepia</option>
+            </select>
+
+            <div class="carrito">
+                🛒 Carrito
+                <span id="contador">0</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="productos" class="contenedor-productos"></section>
+        <!-- Modal -->
+        <div class="modal" id="modal">
+            <div class="modal-contenido">
+                <span id="cerrarModal">&times;</span>
+                <img id="modalImagen" src="" alt="">
+                <h2 id="modalNombre"></h2>
+                <p id="modalDescripcion"></p>
+                <h3 id="modalPrecio"></h3>
+                <button id="agregarCarrito">
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+        <!-- Carrucel -->
+                <div class="carrusel">
+                    <button class="anterior" id="btnAnteriorId" onclick="moverAnterior()">&laquo;</button>
+                    <div class="carrusel-contenido" id="carruselContenidoId">
+                        <img src="../imgs/Alka-Seltzer.png" alt="Alka-Seltzer">
+                        <img src="../imgs/Amoxicilina.jpg" alt="Amoxicilina">
+                        <img src="../imgs/Atenolol.png" alt="Atenolol">
+                        <img src="../imgs/Cepillo Dental Oral-B.png" alt="Cepillo Dental Oral-B">
+                        <img src="../imgs/Ciprofloxacino.png" alt="Ciprofloxacino">
+                        <img src="../imgs/Dipirona.png" alt="Dipirona">
+                        <img src="../imgs/Higiene facial.png" alt="Higiene facial">
+                        <img src="../imgs/Kit de Emergencia Básico.jpg" alt="Kit de Emergencia Básico">
+                    </div>
+                    <button class="siguiente" id="btnSiguienteId" onclick="moverSiguiente()">&raquo;</button>
+                </div>
+    </main>
+    <script src="../js/app.js"></script>
+</body>
+</html>

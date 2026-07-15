@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia Salud</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Farmacia Salud</h1>
+        <nav>
+            <ul>
+                <a href="./index.html">Inicio</a>
+                <a href="./views/medicamentos.html">Medicamentos</a>
+                <a href="./views/articulos.html">Artículos</a>
+            </ul>
+        </nav>
+        <div class="acciones">
+            <select id="temaSelect" onchange="cambiarTema()">
+                <option value="light">☀️ Modo Claro</option>
+                <option value="dark">🌙 Modo Oscuro</option>
+                <option value="sepia">🎨 Modo Sepia</option>
+            </select>
+
+            <div class="carrito">
+                🛒 Carrito
+                <span id="contador">0</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Carrucel -->
+                <div class="carrusel">
+                    <button class="anterior" id="btnAnteriorId" onclick="moverAnterior()">&laquo;</button>
+                    <div class="carrusel-contenido" id="carruselContenidoId">
+                        <img src="./imgs/Alka-Seltzer.png" alt="Alka-Seltzer">
+                        <img src="./imgs/Amoxicilina.jpg" alt="Amoxicilina">
+                        <img src="./imgs/Atenolol.png" alt="Atenolol">
+                        <img src="./imgs/Cepillo Dental Oral-B.png" alt="Cepillo Dental Oral-B">
+                        <img src="./imgs/Ciprofloxacino.png" alt="Ciprofloxacino">
+                        <img src="./imgs/Dipirona.png" alt="Dipirona">
+                        <img src="./imgs/Higiene facial.png" alt="Higiene facial">
+                        <img src="./imgs/Kit de Emergencia Básico.jpg" alt="Kit de Emergencia Básico">
+                    </div>
+                    <button class="siguiente" id="btnSiguienteId" onclick="moverSiguiente()">&raquo;</button>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61768.77525481656!2d-90.55146217346191!3d14.624780006426121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3d31ddbcadf%3A0x464aa6f2fd9b180b!2sFarmacia%20Meykos!5e0!3m2!1sen!2sgt!4v1780712197259!5m2!1sen!2sgt" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+        <aside class="ref-marca">
+            <video controls width="200" autoplay loop muted>
+                <source src="./vids/productos_promocion.mp4" type="video/mp4">
+            </video>
+        </aside>
+        <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-contenido">
+            <span id="cerrarModal">&times;</span>
+            <img id="modalImagen" src="" alt="">
+            <h2 id="modalNombre"></h2>
+            <p id="modalDescripcion"></p>
+            <h3 id="modalPrecio"></h3>
+            <button id="agregarCarrito">
+                Agregar al carrito
+            </button>
+        </div>
+    </div>
+    </div>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>
