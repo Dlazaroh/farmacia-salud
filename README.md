@@ -28,9 +28,11 @@ abrir archivo
 ```
 
 💻 Uso 
-Explica brevemente cómo interactuar con la interfaz web o menciona las rutas principales y credenciales de prueba (si aplica).
+Navegación y Búsqueda: El usuario visualiza un catálogo interactivo en formato de carrusel, donde puede deslizarse hacia los lados usando las flechas (« y ») para explorar los medicamentos y artículos disponibles (como Ciprofloxacino, Dipirona, Ibuprofeno o kits de primeros auxilios).
+
+Personalización Visual: En la barra superior, puede desplegar el selector de "Modo Claro" para cambiar la interfaz a los temas visuales alternativos (oscuro o sepia) según su preferencia y comodidad de lectura.
 
 📄 Licencia
-Este proyecto está bajo la Licencia [Nombre de la Licencia, ej. MIT].
+Este proyecto está bajo la Licencia MIT.
 
-Creado con 💻 por [Tu Nombre o Usuario]
+Creado con 💻 por Dlazaroh
